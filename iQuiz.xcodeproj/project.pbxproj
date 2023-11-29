@@ -13,6 +13,7 @@
 		ABA58DF72B17893400FFCA33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA58DF52B17893400FFCA33 /* Main.storyboard */; };
 		ABA58DF92B17893500FFCA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA58DF82B17893500FFCA33 /* Assets.xcassets */; };
 		ABA58DFC2B17893500FFCA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA58DFA2B17893500FFCA33 /* LaunchScreen.storyboard */; };
+		ABA58E042B1799A400FFCA33 /* QuestaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA58E032B1799A400FFCA33 /* QuestaoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ABA58DF82B17893500FFCA33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABA58DFB2B17893500FFCA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABA58DFD2B17893500FFCA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA58E032B1799A400FFCA33 /* QuestaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				ABA58DF12B17893400FFCA33 /* SceneDelegate.swift */,
 				ABA58DF32B17893400FFCA33 /* ViewController.swift */,
 				ABA58DF52B17893400FFCA33 /* Main.storyboard */,
+				ABA58E032B1799A400FFCA33 /* QuestaoViewController.swift */,
 				ABA58DF82B17893500FFCA33 /* Assets.xcassets */,
 				ABA58DFA2B17893500FFCA33 /* LaunchScreen.storyboard */,
 				ABA58DFD2B17893500FFCA33 /* Info.plist */,
@@ -141,6 +144,7 @@
 				ABA58DF42B17893400FFCA33 /* ViewController.swift in Sources */,
 				ABA58DF02B17893400FFCA33 /* AppDelegate.swift in Sources */,
 				ABA58DF22B17893400FFCA33 /* SceneDelegate.swift in Sources */,
+				ABA58E042B1799A400FFCA33 /* QuestaoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
