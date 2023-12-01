@@ -8,22 +8,46 @@
 import UIKit
 
 class QuestaoViewController: UIViewController {
+    
+    var pontuacao = 0
+    var numeroQuestao = 0
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var tituloQuestaoLabel: UILabel!
+    
+    @IBOutlet var botoesRespostas: [UIButton]!
+    
+    @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
+        print(sender.tag)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configuraLayout()
     }
-    */
-
+    
+    func configuraLayout() {
+        navigationItem.hidesBackButton = true
+        
+        tituloQuestaoLabel.numberOfLines = 0
+        tituloQuestaoLabel.textAlignment = .center
+        
+        for botao in botoesRespostas {
+            botao.layer.cornerRadius = 12.0
+        }
+        
+        configuraQuestao()
+    }
+    
+    func configuraBotaoRespostaPressionado() {
+        
+    }
+    
+    func configuraQuestao() {
+        tituloQuestaoLabel.text = questoes[numeroQuestao].titulo
+        
+        for botao in botoesRespostas {
+            let tituloBotao = questoes[numeroQuestao].respostas[botao.tag]
+            botao.setTitle(tituloBotao, for: .normal)
+        }
+    }
 }

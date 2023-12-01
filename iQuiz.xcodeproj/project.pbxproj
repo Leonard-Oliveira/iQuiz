@@ -14,6 +14,7 @@
 		ABA58DF92B17893500FFCA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA58DF82B17893500FFCA33 /* Assets.xcassets */; };
 		ABA58DFC2B17893500FFCA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA58DFA2B17893500FFCA33 /* LaunchScreen.storyboard */; };
 		ABA58E042B1799A400FFCA33 /* QuestaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA58E032B1799A400FFCA33 /* QuestaoViewController.swift */; };
+		ABA58E062B19573300FFCA33 /* Questoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA58E052B19573300FFCA33 /* Questoes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ABA58DFB2B17893500FFCA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABA58DFD2B17893500FFCA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA58E032B1799A400FFCA33 /* QuestaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoViewController.swift; sourceTree = "<group>"; };
+		ABA58E052B19573300FFCA33 /* Questoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questoes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				ABA58DF12B17893400FFCA33 /* SceneDelegate.swift */,
 				ABA58DF32B17893400FFCA33 /* ViewController.swift */,
 				ABA58DF52B17893400FFCA33 /* Main.storyboard */,
+				ABA58E052B19573300FFCA33 /* Questoes.swift */,
 				ABA58E032B1799A400FFCA33 /* QuestaoViewController.swift */,
 				ABA58DF82B17893500FFCA33 /* Assets.xcassets */,
 				ABA58DFA2B17893500FFCA33 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA58E062B19573300FFCA33 /* Questoes.swift in Sources */,
 				ABA58DF42B17893400FFCA33 /* ViewController.swift in Sources */,
 				ABA58DF02B17893400FFCA33 /* AppDelegate.swift in Sources */,
 				ABA58DF22B17893400FFCA33 /* SceneDelegate.swift in Sources */,
