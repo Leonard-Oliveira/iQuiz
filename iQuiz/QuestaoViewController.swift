@@ -11,18 +11,28 @@ class QuestaoViewController: UIViewController {
     
     var pontuacao = 0
     var numeroQuestao = 0
-
+    
     @IBOutlet weak var tituloQuestaoLabel: UILabel!
     
     @IBOutlet var botoesRespostas: [UIButton]!
     
     @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
-        print(sender.tag)
+        let usuarioAcertou = questoes[numeroQuestao].respostaCorreta == sender.tag
+        
+        if usuarioAcertou {
+            pontuacao += 1
+            print("o usuario acertou!")
+        }
+        if numeroQuestao < questoes.count-1 {
+            numeroQuestao += 1
+        }
+        configuraQuestao()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configuraLayout()
+        configuraQuestao()
     }
     
     func configuraLayout() {
@@ -34,17 +44,10 @@ class QuestaoViewController: UIViewController {
         for botao in botoesRespostas {
             botao.layer.cornerRadius = 12.0
         }
-        
-        configuraQuestao()
-    }
-    
-    func configuraBotaoRespostaPressionado() {
-        
     }
     
     func configuraQuestao() {
         tituloQuestaoLabel.text = questoes[numeroQuestao].titulo
-        
         for botao in botoesRespostas {
             let tituloBotao = questoes[numeroQuestao].respostas[botao.tag]
             botao.setTitle(tituloBotao, for: .normal)
