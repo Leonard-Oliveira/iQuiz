@@ -9,6 +9,8 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    var score: Int?
+    
     @IBOutlet weak var quizFinishedLabel: UILabel!
     
     @IBOutlet weak var userScoreLabel: UILabel!

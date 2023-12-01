@@ -136,7 +136,7 @@
                         <outletCollection property="answerButtons" destination="2YE-Qd-cEi" collectionClass="NSMutableArray" id="5Ax-UL-e07"/>
                         <outletCollection property="answerButtons" destination="pTA-IO-cRA" collectionClass="NSMutableArray" id="zvA-kX-QZg"/>
                         <outletCollection property="answerButtons" destination="U9T-6r-maq" collectionClass="NSMutableArray" id="VQ6-K0-eyL"/>
-                        <segue destination="nDu-v9-LTT" kind="show" id="5Gd-an-T2H"/>
+                        <segue destination="nDu-v9-LTT" kind="show" identifier="navigateToResultScreen" id="5Gd-an-T2H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4O-uX-7Zo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -153,13 +153,13 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você acertou 2 de 10 questões." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZV-j1-ikx">
                                 <rect key="frame" x="64" y="272.33333333333331" width="262" height="76.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentual final: 20%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVP-8f-qZm">
                                 <rect key="frame" x="64" y="421" width="262" height="31.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -171,7 +171,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Reiniciar Quiz" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -234,7 +234,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5Gd-an-T2H"/>
         <segue reference="THO-F5-swr"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -29,6 +29,11 @@ class QuestionViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        resultVC.score = score
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setLayout()
@@ -36,7 +41,7 @@ class QuestionViewController: UIViewController {
     }
     
     func navigateToResultViewController() {
-        
+        performSegue(withIdentifier: "navigateToResultScreen", sender: nil)
     }
     
     func setLayout() {
