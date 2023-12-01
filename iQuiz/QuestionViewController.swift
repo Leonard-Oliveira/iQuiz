@@ -23,6 +23,8 @@ class QuestionViewController: UIViewController {
         if questionIndex < questions.count-1 {
             questionIndex += 1
             Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(setQuestion), userInfo: nil, repeats: false)
+        } else {
+            navigateToResultViewController()
         }
         
     }
@@ -31,6 +33,10 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         setLayout()
         setQuestion()
+    }
+    
+    func navigateToResultViewController() {
+        
     }
     
     func setLayout() {
