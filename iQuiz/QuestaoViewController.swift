@@ -17,16 +17,21 @@ class QuestaoViewController: UIViewController {
     @IBOutlet var botoesRespostas: [UIButton]!
     
     @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
-        let usuarioAcertou = questoes[numeroQuestao].respostaCorreta == sender.tag
+        let usuarioAcertouResposta = questoes[numeroQuestao].respostaCorreta == sender.tag
         
-        if usuarioAcertou {
+        if usuarioAcertouResposta {
             pontuacao += 1
+            sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1)
             print("o usuario acertou!")
+        } else {
+            sender.backgroundColor = UIColor(red: 211/255, green: 17/255, blue: 17/255, alpha: 1)
         }
+        
         if numeroQuestao < questoes.count-1 {
             numeroQuestao += 1
+            Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(configuraQuestao), userInfo: nil, repeats: false)
         }
-        configuraQuestao()
+        
     }
     
     override func viewDidLoad() {
@@ -44,13 +49,16 @@ class QuestaoViewController: UIViewController {
         for botao in botoesRespostas {
             botao.layer.cornerRadius = 12.0
         }
+        
+        
     }
     
-    func configuraQuestao() {
+    @objc func configuraQuestao() {
         tituloQuestaoLabel.text = questoes[numeroQuestao].titulo
         for botao in botoesRespostas {
             let tituloBotao = questoes[numeroQuestao].respostas[botao.tag]
             botao.setTitle(tituloBotao, for: .normal)
+            botao.backgroundColor = UIColor(red: 115/255, green: 50/255, blue: 255/255, alpha: 1)
         }
     }
 }
