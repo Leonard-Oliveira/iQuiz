@@ -21,20 +21,22 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configuraLayout()
+        setLayout()
+        setResults()
     }
     
-    func configuraLayout() {
+    func setResults() {
+        guard let score = score else { return }
+        userScoreLabel.text = "Vocë acertou \(score) de \(questions.count) questões."
+        
+        let scorePercentage = (score * 100) / questions.count
+        userPercentageScoreLabel.text = "Percentual final: \(scorePercentage)%."
+    }
+    
+    func setLayout() {
+        navigationItem.hidesBackButton = true
         restartButton.layer.cornerRadius = 12.0
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }

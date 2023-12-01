@@ -61,7 +61,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTA-IO-cRA">
-                                <rect key="frame" x="64" y="297" width="262" height="64"/>
+                                <rect key="frame" x="64" y="354" width="262" height="64"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="6x9-Gt-p6b"/>
@@ -76,7 +76,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9T-6r-maq">
-                                <rect key="frame" x="64" y="393" width="262" height="64"/>
+                                <rect key="frame" x="64" y="450" width="262" height="64"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="fNZ-ph-4eF"/>
@@ -91,13 +91,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tema da Questão" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJp-ll-Bm8">
-                                <rect key="frame" x="64" y="55" width="262" height="86"/>
+                                <rect key="frame" x="64" y="112" width="262" height="86"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YE-Qd-cEi">
-                                <rect key="frame" x="64" y="201" width="262" height="64"/>
+                                <rect key="frame" x="64" y="258" width="262" height="64"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="fv2-aA-6Zv"/>
@@ -120,6 +120,7 @@
                             <constraint firstItem="2YE-Qd-cEi" firstAttribute="leading" secondItem="8Kl-ty-sgI" secondAttribute="leading" constant="64" id="Luf-bL-lcM"/>
                             <constraint firstItem="8Kl-ty-sgI" firstAttribute="trailing" secondItem="pTA-IO-cRA" secondAttribute="trailing" constant="64" id="Opi-fo-kIH"/>
                             <constraint firstItem="8Kl-ty-sgI" firstAttribute="trailing" secondItem="nJp-ll-Bm8" secondAttribute="trailing" constant="64" id="Vl1-38-88N"/>
+                            <constraint firstItem="nJp-ll-Bm8" firstAttribute="top" secondItem="8Kl-ty-sgI" secondAttribute="top" constant="112" id="eNS-iE-iFm"/>
                             <constraint firstItem="pTA-IO-cRA" firstAttribute="top" secondItem="2YE-Qd-cEi" secondAttribute="bottom" constant="32" id="f2J-jc-zg7"/>
                             <constraint firstItem="8Kl-ty-sgI" firstAttribute="trailing" secondItem="U9T-6r-maq" secondAttribute="trailing" constant="64" id="iXF-Fj-q4T"/>
                             <constraint firstItem="U9T-6r-maq" firstAttribute="leading" secondItem="8Kl-ty-sgI" secondAttribute="leading" constant="64" id="ji3-2f-ikH"/>
@@ -127,7 +128,6 @@
                             <constraint firstItem="8Kl-ty-sgI" firstAttribute="trailing" secondItem="2YE-Qd-cEi" secondAttribute="trailing" constant="64" id="oX2-dW-bNL"/>
                             <constraint firstItem="2YE-Qd-cEi" firstAttribute="top" secondItem="nJp-ll-Bm8" secondAttribute="bottom" constant="60" id="omI-tL-jHm"/>
                             <constraint firstItem="pTA-IO-cRA" firstAttribute="leading" secondItem="8Kl-ty-sgI" secondAttribute="leading" constant="64" id="sf3-3E-S7r"/>
-                            <constraint firstItem="nJp-ll-Bm8" firstAttribute="top" secondItem="8Kl-ty-sgI" secondAttribute="top" constant="55" id="yao-C6-vf5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BxK-wf-hPg"/>
@@ -234,6 +234,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="5Gd-an-T2H"/>
         <segue reference="THO-F5-swr"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     }
 
     func configuraLayout() {
+        navigationItem.hidesBackButton = true
         BotaoIniciarQuiz.layer.cornerRadius = 12.0
     }
 }
