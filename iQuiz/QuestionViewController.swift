@@ -15,9 +15,9 @@ class QuestionViewController: UIViewController {
         
         if userScored {
             score += 1
-            sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1)
+            sender.backgroundColor = UIColor.backgroundGreen
         } else {
-            sender.backgroundColor = UIColor(red: 211/255, green: 17/255, blue: 17/255, alpha: 1)
+            sender.backgroundColor = UIColor.backgroundRed
         }
         
         if questionIndex < questions.count-1 {
