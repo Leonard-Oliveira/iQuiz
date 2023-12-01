@@ -1,0 +1,57 @@
+
+import UIKit
+
+class QuestionViewController: UIViewController {
+    
+    var score = 0
+    var questionIndex = 0
+    
+    @IBOutlet weak var questionTitleLabel: UILabel!
+    
+    @IBOutlet var answerButtons: [UIButton]!
+    
+    @IBAction func answerButtonPressed(_ sender: UIButton) {
+        let userScored = questions[questionIndex].rightAnswerIndex == sender.tag
+        
+        if userScored {
+            score += 1
+            sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1)
+        } else {
+            sender.backgroundColor = UIColor(red: 211/255, green: 17/255, blue: 17/255, alpha: 1)
+        }
+        
+        if questionIndex < questions.count-1 {
+            questionIndex += 1
+            Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(setQuestion), userInfo: nil, repeats: false)
+        }
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setLayout()
+        setQuestion()
+    }
+    
+    func setLayout() {
+        navigationItem.hidesBackButton = true
+        
+        questionTitleLabel.numberOfLines = 0
+        questionTitleLabel.textAlignment = .center
+        
+        for botao in answerButtons {
+            botao.layer.cornerRadius = 12.0
+        }
+        
+        
+    }
+    
+    @objc func setQuestion() {
+        questionTitleLabel.text = questions[questionIndex].title
+        for botao in answerButtons {
+            let tituloBotao = questions[questionIndex].answers[botao.tag]
+            botao.setTitle(tituloBotao, for: .normal)
+            botao.backgroundColor = UIColor(red: 115/255, green: 50/255, blue: 255/255, alpha: 1)
+        }
+    }
+}
